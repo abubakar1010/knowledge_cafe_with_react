@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Blog from "../Blog/Blog";
 
 
 const Blogs = () => {
@@ -20,7 +21,11 @@ const Blogs = () => {
     console.log(blogs);
     return (
         <>
-            <h1>blogs</h1>
+            <div>
+                {
+                    blogs.map( blog => <Blog key={blog.id} blog={blog} />)
+                }
+            </div>
         </>
     );
 };
