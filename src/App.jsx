@@ -1,10 +1,18 @@
 
+import { useState } from 'react'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
-import Bookmark from './components/Bookmark/Bookmark'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
 
 function App() {
+
+  const [bookmark, setBookmark] = useState([])
+
+  function handleBookmark(blog){
+    const newBookmarks = [...bookmark,blog];
+    setBookmark(newBookmarks)
+  }
 
   return (
     <>
@@ -12,8 +20,8 @@ function App() {
 
     <Header />
     <div className=' flex gap-7'>
-    <Blogs />
-    <Bookmark />
+    <Blogs handleBookmark={handleBookmark} />
+    <Bookmarks bookmark={bookmark} />
 
     </div>
     </div>

@@ -1,24 +1,20 @@
+import PropTypes from 'prop-types';
 
-const Bookmark = () => {
+const Bookmark = ({bookmark}) => {
+    console.log(bookmark);
+    const {title} = bookmark
     return (
         <>
-        <section className="w-full">
-
-            <div className="py-7 w-full text-center">
-                <h1 className=" bg-[#6047EC1A] text-2xl font-medium text-[#6047EC] text-center py-6 rounded-xl">Spent time on read : 0 min</h1>
+            <div className="p-7 rounded-xl bg-slate-200 shadow-xl mt-6">
+                <h1 className="font-medium text-lg">{title}</h1>
             </div>
-
-            <div className=" bg-[#1111110D] p-7 rounded-xl ">
-                <h1 className=" font-bold text-2xl text-[#111111]">Bookmarked Blogs: 0 <span></span></h1>
-                <div className=" p-7 rounded-xl bg-white shadow-xl mt-6">
-
-                </div>
-            </div>
-
-            </section>
-            
         </>
     );
 };
+
+Bookmark.propTypes = {
+
+    bookmark: PropTypes.object.isRequired
+}
 
 export default Bookmark;
