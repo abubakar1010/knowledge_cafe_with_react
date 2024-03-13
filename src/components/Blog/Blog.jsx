@@ -5,7 +5,7 @@ const Blog = ({blog,handleBookmark,handleReadingTime}) => {
 
     // console.log(blog);
 
-    const {cover,title, author, author_image, post_date, reading_time, hashtags} = blog
+    const {cover,title, author, author_image, post_date, reading_time, hashtags,id} = blog
 
     return (
         <>
@@ -33,7 +33,7 @@ const Blog = ({blog,handleBookmark,handleReadingTime}) => {
                     }
 
                 </div>
-                <p className="text-[#6047EC] underline text-xl font-semibold pt-3 cursor-pointer" onClick={ () => handleReadingTime(reading_time)}>Mark As read </p>
+                <p className="text-[#6047EC] underline text-xl font-semibold pt-3 cursor-pointer" onClick={ () => handleReadingTime(id,reading_time)}>Mark As read </p>
             </div>
             </section>
         </>

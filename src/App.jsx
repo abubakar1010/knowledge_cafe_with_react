@@ -20,11 +20,13 @@ function App() {
 
   const [readingTime, setREadingTime] = useState(0);
 
-  function handleReadingTime(time){
+  function handleReadingTime(id,time){
     // console.log("reading time", time);
 
     const newTime = parseInt(readingTime) + parseInt(time)
     setREadingTime(newTime)
+    const filteredBookmark = bookmark.filter( bookmark => bookmark.id !== id);
+    setBookmark(filteredBookmark)
   }
 
 
