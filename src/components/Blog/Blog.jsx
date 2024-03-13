@@ -1,4 +1,4 @@
-
+import { CiBookmarkPlus } from "react-icons/ci";
 
 const Blog = ({blog}) => {
 
@@ -19,7 +19,10 @@ const Blog = ({blog}) => {
                         <p className="font-medium">{post_date}</p>
                     </div>
                 </div>
-                    <h2 className="text-lg font-medium">{reading_time} read</h2>
+                <div className=" flex items-center">
+                    <span className="text-lg font-medium">{reading_time} read</span>
+                    <button className=" ml-3 text-3xl text-red-700"><CiBookmarkPlus /></button>
+                    </div>
                 </div>
                 <h1 className=" text-4xl font-bold my-7">{title}</h1>
                 <div className="flex gap-7 text-xl font-medium">
@@ -29,7 +32,7 @@ const Blog = ({blog}) => {
                     }
 
                 </div>
-                <p className="text-[#6047EC] underline text-xl font-semibold pt-3 cursor-pointer">Mark As read</p>
+                <p className="text-[#6047EC] underline text-xl font-semibold pt-3 cursor-pointer">Mark As read </p>
             </div>
             </section>
         </>
