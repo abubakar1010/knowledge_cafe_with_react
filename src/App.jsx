@@ -1,11 +1,14 @@
 
 import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-    <h2 className=' text-2xl bg-orange-500 p-4 rounded-lg'>Project setup with tailwind css</h2>
+    <Header />
+    <Blogs />
     </>
   )
 }
