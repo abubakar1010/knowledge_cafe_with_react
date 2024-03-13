@@ -2,9 +2,9 @@
 const Header = () => {
     return (
         <>
-            <div>
-                <h2>Knowledge Cafe</h2>
-                {/* <img src="" alt="" /> */}
+            <div className=" flex justify-between my-12 ">
+                <h2 className=" text-4xl font-bold">Knowledge Cafe</h2>
+                <img src='profile.svg' alt="" />
             </div>
         </>
     );
