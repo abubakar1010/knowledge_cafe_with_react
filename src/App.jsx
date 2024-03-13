@@ -7,6 +7,8 @@ import Header from './components/Header/Header'
 
 function App() {
 
+  // set book mark
+
   const [bookmark, setBookmark] = useState([])
 
   function handleBookmark(blog){
@@ -14,14 +16,26 @@ function App() {
     setBookmark(newBookmarks)
   }
 
+  // set reading time
+
+  const [readingTime, setREadingTime] = useState(0);
+
+  function handleReadingTime(time){
+    // console.log("reading time", time);
+
+    const newTime = parseInt(readingTime) + parseInt(time)
+    setREadingTime(newTime)
+  }
+
+
   return (
     <>
     <div className=' container mx-auto'>
 
     <Header />
     <div className=' flex gap-7'>
-    <Blogs handleBookmark={handleBookmark} />
-    <Bookmarks bookmark={bookmark} />
+    <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime} />
+    <Bookmarks bookmark={bookmark} readingTime={readingTime}/>
 
     </div>
     </div>
