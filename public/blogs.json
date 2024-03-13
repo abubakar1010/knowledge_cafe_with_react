@@ -1,0 +1,71 @@
+[
+    {
+        "id": "001",
+        "cover": "https://i.postimg.cc/9FhsW1FN/1.jpg",
+        "author": "Alice Adams",
+        "author_image": "https://i.postimg.cc/nrx8PfRp/boy1.png",
+        "post_date": "2024-03-13",
+        "reading_time": "12 mins",
+        "title": "The Ultimate Guide to Productivity",
+        "hashtags": [
+            "productivity",
+            "self-improvement"
+        ]
+    },
+    {
+        "id": "002",
+        "cover": "https://i.postimg.cc/59YsQrt2/2.png",
+        "author": "Bob Brown",
+        "author_image": "https://i.postimg.cc/nrx8PfRp/boy1.png",
+        "post_date": "2024-03-12",
+        "reading_time": "9 mins",
+        "title": "Healthy Eating Habits for a Better Life",
+        "hashtags": [
+            "health",
+            "nutrition",
+            "lifestyle"
+        ]
+    },
+    {
+        "id": "003",
+        "cover": "https://i.postimg.cc/LskpSsrG/3.png",
+        "author": "Charlie Clark",
+        "author_image": "https://i.postimg.cc/nrx8PfRp/boy1.png",
+        "post_date": "2024-03-11",
+        "reading_time": "7 mins",
+        "title": "Exploring Mindfulness: A Beginner's Guide",
+        "hashtags": [
+            "mindfulness",
+            "meditation",
+            "wellness"
+        ]
+    },
+    {
+        "id": "004",
+        "cover": "https://i.postimg.cc/mZj6s9hQ/4.jpg",
+        "author": "Diana Davis",
+        "author_image": "https://i.postimg.cc/nrx8PfRp/boy1.png",
+        "post_date": "2024-03-10",
+        "reading_time": "11 mins",
+        "title": "The Art of Photography: Capturing Moments",
+        "hashtags": [
+            "photography",
+            "art",
+            "creativity"
+        ]
+    },
+    {
+        "id": "005",
+        "cover": "https://i.postimg.cc/3wV5TvR8/Rectangle-1-1.png",
+        "author": "Ethan Evans",
+        "author_image": "https://i.postimg.cc/nrx8PfRp/boy1.png",
+        "post_date": "2024-03-09",
+        "reading_time": "14 mins",
+        "title": "Unlocking the Power of Your Mind",
+        "hashtags": [
+            "mind",
+            "brain",
+            "neuroscience"
+        ]
+    }
+]
